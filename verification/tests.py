@@ -10,6 +10,7 @@ Each test is a dict with
 
 TESTS = {
     "Basics": [
+        # third
         {
             "input": ["90000+10000="],
             "answer": "error",
@@ -45,6 +46,7 @@ TESTS = {
             "answer": "error",
             "explanation": "result has length of 6 digits",
         },
+        # second
         {
             "input": ["3+="],
             "answer": "6",
@@ -65,6 +67,7 @@ TESTS = {
             "answer": "1",
             "explanation": "the last sign is taken, ignore beginning signs",
         },
+        # first
         {
             "input": ["12"],
             "answer": "12",
@@ -107,6 +110,7 @@ TESTS = {
         },
     ],
     "Extra": [
+        # third
         {
             "input": ["100000"],
             "answer": "10000",
@@ -135,6 +139,7 @@ TESTS = {
             "input": ["50000-===="],
             "answer": "error",
         },
+        # second
         {
             "input": ["78-="],
             "answer": "0",
@@ -159,6 +164,7 @@ TESTS = {
             "input": ["12+15=="],
             "answer": "42",
         },
+        # first
         {
             "input": ["-5-10+15"],
             "answer": "15",
