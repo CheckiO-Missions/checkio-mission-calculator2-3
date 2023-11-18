@@ -1,0 +1,56 @@
+<!-- Describe task in general -->
+
+<p style="float: left; margin: 10px;">
+    <a href="https://www.vecteezy.com/free-vector/calculator"><img title="example" src="{{MEDIA}}calc.png" alt="example" style="max-height: 200px"/></a> 
+</p>
+<p>
+    <i>Der grundlegende Unterschied zwischen einem Taschenrechner und einem Computer besteht darin, dass ein Computer so programmiert werden kann, dass das Programm je nach den Zwischenergebnissen verschiedene Verzweigungen annimmt, während Taschenrechner von vornherein mit bestimmten Funktionen ausgestattet sind. Die Unterscheidung ist nicht eindeutig: Einige Geräte, die als programmierbare Taschenrechner eingestuft werden, verfügen über Programmierfunktionen, manchmal mit Unterstützung für Programmiersprachen <a href="https://en.wikipedia.org/wiki/Calculator" target="_blank">Find more on wikipedia page...</a></i>
+</p>
+<p>
+    In dieser Aufgabenserie werden Sie einen einfachen Taschenrechner bauen.
+</p>
+<p>
+    Als Eingabe erhalten Sie eine Folge von gedrückten Tasten, und als Ergebnis dieser Funktion sollten Sie angeben, was auf dem Bildschirm angezeigt wird, wenn die letzte Taste gedrückt wird. Seien Sie aufmerksam, es ist nicht immer das Ergebnis des Ausdrucks. Wenn Sie mit dem physischen Taschenrechner oder der App spielen, können Sie die Randfälle besser erkennen.
+</p>
+<p>
+    Der maximale Ziffernabstand von 5 wird hinzugefügt. Das bedeutet, dass die maximale Zahl, die Sie eingeben können, "99999" ist.
+</p>
+<p>
+    <strong>Erwartetes Verhalten:</strong>
+    <ul>
+        <li><i>anfängliche Nullen sollten entfernt werden, Nur-Nullen-Zahlen - werden in eine einzelne Null umgewandelt;</i></li>
+        <li><i>von den +- Zeichen zwischen den Zahlen sollte das letzte genommen werden;</i></li>
+        <li><i>"==" bedeutet die Wiederholung der letzten Operation;</i></li>
+        <li><i>"+=" oder "-=" - addiert/subtrahiert die Zahl (oder das Ergebnis der Operation) vor der Kombination (verdoppelt die Zahl/subtrahiert sich);</i></li>
+        <li><i>der Rechner ignoriert die Ziffer, die Sie nach der 5 eingeben;</i></li>
+        <li><i>"-" für Zahlen &lt; 0 nimmt NICHT die Stelle der Ziffer ein;</i></li>
+        <li><i>wenn abs(Ergebnis) größer als 99999 ist - wird "Fehler" als Ergebnis angezeigt.</i></li>
+    </ul>
+</p>
+
+<!-- Explain input and output values -->
+<p>
+   <strong>Eingabe:</strong> Zeichenkette.
+</p>
+<p>
+   <strong>Ausgabe:</strong> String.
+</p>
+<p>
+    <strong>Beispiele:</strong>
+</p>
+<pre class="brush: {% if is_js %}javascript{% else %}python{% endif %}">{{init_code_tmpl}}</pre>
+
+<!-- Here you can explain how it can be used in development -->
+<!-- The section is optional -->
+<p class="for_info_only">
+
+    <strong>Wie es verwendet wird:</strong>
+    <i>Taschenrechner sind weit verbreitet. Es ist interessant und nützlich, die Prinzipien ihrer Eingabe und Ausgabe zu verstehen.</i>
+</p>
+
+<!-- Here you can explain some constraints for input-->
+<!-- The section is optional -->
+<p>
+    <strong>Vorbedingung:</strong>
+    <i>Erlaubte Zeichen: Ziffern (0-9), Plus- (+), Minus- (-) oder Gleichheitszeichen (=) und deren Kombinationen (+=, +-, == usw.). Die Zahl darf nicht mehr als 5 Ziffern enthalten.</i>
+</p>
