@@ -1,0 +1,56 @@
+<!-- Describe task in general -->
+
+<p style="float: left; margin: 10px;">
+    <a href="https://www.vecteezy.com/free-vector/calculator"><img title="example" src="{{MEDIA}}calc.png" alt="example" style="max-height: 200px"/></a> 
+</p>
+<p>
+    <i>La différence fondamentale entre une calculatrice et un ordinateur est qu'un ordinateur peut être programmé d'une manière qui permet au programme de prendre différentes branches en fonction des résultats intermédiaires, alors que les calculatrices sont conçues à l'avance avec des fonctions spécifiques intégrées. La distinction n'est pas nette: certains appareils classés comme calculatrices programmables disposent de fonctions de programmation, parfois avec un support pour les langages de programmation <a href="https://en.wikipedia.org/wiki/Calculator" target="_blank">Find more on wikipedia page...</a></i>
+</p>
+<p>
+    Dans cette série de missions, vous allez construire une calculatrice élémentaire.
+</p>
+<p>
+    En entrée, vous obtenez une séquence de touches pressées et, comme résultat de cette fonction, vous devez montrer ce qui sera affiché à l'écran lorsque la dernière touche sera pressée. Attention, ce n'est pas toujours le résultat de l'expression. En fait, jouer avec la calculatrice physique ou l'application vous aidera vraiment à repérer les cas limites.
+</p>
+<p>
+    Un espace maximal de 5 chiffres est ajouté. Cela signifie que le nombre maximum que vous pouvez entrer est "99999".
+</p>
+<p>
+    <strong>Comportement attendu:</strong>
+    <ul>
+        <li><i>les zéros du début doivent être supprimés, le nombre de zéros seulement est converti en zéro unique;</i></li>
+        <li><i>parmi les signes +- entre les nombres, le dernier doit être pris;</i></li>
+        <li><i>"==" signifie que la dernière opération doit être répétée;</i></li>
+        <li><i>"+=" ou "-=" - ajouter/soustraire le nombre (ou le résultat de l'opération) avant la combinaison (doubler le nombre/soustraire lui-même);</i></li>
+        <li><i>la calculatrice ignore les chiffres que vous entrez après le 5;</i></li>
+        <li><i>"-" pour les nombres &lt; 0 ne prend PAS la place d'un chiffre;</i></li>
+        <li><i>si l'abs(résultat) est supérieur à 99999 - "erreur" est affiché comme résultat.</i></li>
+    </ul>
+</p>
+
+<!-- Explain input and output values -->
+<p>
+   <strong>Entrée:</strong> Chaîne.
+</p>
+<p>
+   <strong>Sortie:</strong> Chaîne.
+</p>
+<p>
+    <strong>Exemples:</strong>
+</p>
+<pre class="brush: {% if is_js %}javascript{% else %}python{% endif %}">{{init_code_tmpl}}</pre>
+
+<!-- Here you can explain how it can be used in development -->
+<!-- The section is optional -->
+<p class="for_info_only">
+
+    <strong>Comment c'est utilisé:</strong>
+    <i>Les calculatrices sont largement utilisées. Il est intéressant et utile de comprendre les principes de son entrée et de sa sortie.</i>
+</p>
+
+<!-- Here you can explain some constraints for input-->
+<!-- The section is optional -->
+<p>
+    <strong>Condition préalable:</strong>
+    <i>Caractères autorisés: chiffres (0-9), signes plus (+), moins (-) ou équation (=) et leurs combinaisons (+=, +-, == etc.). Le nombre ne peut contenir plus de 5 chiffres.</i>
+</p>
