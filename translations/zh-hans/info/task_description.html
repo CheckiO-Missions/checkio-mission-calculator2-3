@@ -1,0 +1,56 @@
+<!-- Describe task in general -->
+
+<p style="float: left; margin: 10px;">
+    <a href="https://www.vecteezy.com/free-vector/calculator"><img title="example" src="{{MEDIA}}calc.png" alt="example" style="max-height: 200px"/></a> 
+</p>
+<p>
+    <i>计算器与计算机的根本区别在于，计算机可以通过编程，使程序根据中间结果采取不同的分支，而计算器则是预先设计好的，内置特定功能。两者的区别并不明显：一些被归类为可编程计算器的设备具有编程功能，有时还支持编程语言<a href="https://en.wikipedia.org/wiki/Calculator" target="_blank">Find more on wikipedia page...</a></i>
+</p>
+<p>
+    在本系列任务中，您将制作一个初级计算器。
+</p>
+<p>
+    作为输入，您需要按下一串按键，而作为该功能的结果，您应该显示按下最后一个按键时屏幕上将显示的内容。注意，这并不总是表达式的结果。实际上，使用实物计算器或应用程序确实有助于你捕捉边缘情况。
+</p>
+<p>
+    最大数字空间为 5。这意味着您可以输入的最大数字是 "99999"。
+</p>
+<p>
+    <strong>预期行为</strong>
+    <ul>
+        <li><i>应删除开头的零，将仅有零的数字转换为单个零；</i></li>
+        <li><i>数字之间的 +- 符号应取最后一个；</i></li>
+        <li><i>"=="表示重复上次操作；</i></li>
+        <li><i>"+="或"-="--在组合前对数字（或运算结果）进行加减运算（将数字加倍或减去本身）；</i></li>
+        <li><i>计算器忽略在第 5 位之后输入的数字；</i></li>
+        <li><i>数字 &lt; 0 的"-"不占位数；</i></li>
+        <li><i>如果 abs(result) 大于 99999，计算结果将显示 "错误"。</i></li>
+    </ul>
+</p>
+
+<!-- Explain input and output values -->
+<p>
+   <strong>输入：</strong>字符串。
+</p>
+<p>
+   <strong>输出： 字符串</strong>字符串。
+</p>
+<p>
+    <strong>示例：字符串</strong>
+</p>
+<pre class="brush: {% if is_js %}javascript{% else %}python{% endif %}">{{init_code_tmpl}}</pre>
+
+<!-- Here you can explain how it can be used in development -->
+<!-- The section is optional -->
+<p class="for_info_only">
+
+    <strong>如何使用</strong>
+    <i>计算器被广泛使用。了解其输入和输出的原理既有趣又有用。</i>
+</p>
+
+<!-- Here you can explain some constraints for input-->
+<!-- The section is optional -->
+<p>
+    <strong>前提条件：</strong>
+    <i>允许使用的字符：数字 (0-9)、正号 (+)、负号 (-) 或等号 (=) 及其组合（+=、+-、== 等）。数字不得超过 5 位。</i>
+</p>
